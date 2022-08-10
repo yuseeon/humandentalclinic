@@ -1,0 +1,141 @@
+@import url('./pc-reset.css');
+
+#title {
+    width: 100vw;
+    height: 420px;
+}
+
+.title-img img {
+    width: 100vw;
+    height: 420px;
+    margin-top: 90px;
+}
+
+.title-img h1 {
+    position: absolute;
+    top: 228px;
+    left: 50%;
+    letter-spacing: 0.1rem;
+    transform: translateX(-50%);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.nav-implant {
+    position: relative;
+}
+
+.nav-implant ul {
+    position: absolute;
+    display: flex;
+    bottom: 3px;
+    width: 100%;
+}
+
+.nav-implant ul li {
+    width: calc(100% / 2);
+    height: 70px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #FFFFFF;
+    letter-spacing: 0.1rem;
+    font-size: 22px;
+    line-height: 66px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.nav-implant ul li:first-child {
+    border-right: none;
+}
+
+.nav-implant .on {
+    background: rgba(26, 160, 165, 0.9);
+}
+
+#info h3,
+h2,
+h4 {
+    color: var(--main-color);
+}
+
+#info .info_clinic {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    margin: 100px 0;
+}
+
+#info .info_clinic h2 {
+    margin-bottom: 50px;
+    padding: 10px;
+    border-bottom: 2px solid var(--main-color);
+}
+
+#info .info_clinic_background {
+    background-color: #f8f8f8;
+    width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#info .info_clinic_background .info_col {
+    flex: 1 1 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* ----------<의료진 소개>---------- */
+
+#info .info_doctor h2 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-bottom: 2px solid var(--main-color);
+}
+
+#info .info_doctor ul li img {
+    width: 350px;
+}
+
+#info .info_doctor {
+    display: flex;
+    flex-direction: column;
+}
+
+#info .doctor_col ul {
+    display: flex;
+    margin-bottom: 150px;
+}
+
+#info .doctor_col ul li {
+    margin: 0 100px;
+}
+
+#info .doctor_col ul .doctor_box {
+    border-top: 1px solid var(--main-color);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #333333;
+    width: 30vw;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#info .doctor_col ul .doctor_box .doctor_box_container h4, p {
+
+}

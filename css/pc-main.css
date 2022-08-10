@@ -1,0 +1,485 @@
+@import url("./pc-reset.css");
+
+body {
+    /* background: rgb(147, 147, 147); */
+}
+
+/****** main-visual slider ***/
+#main-visual {
+    overflow: hidden;
+}
+
+#main-visual .container {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    z-index: 999999;
+}
+
+#main-visual .swiper-container {
+    width: 1920vw;
+    height: 100%;
+  }
+
+  #main-visual .swiper-container .swoper-slide img {
+    height: 100vh;
+  }
+
+#main-visual .swiper-container .swiper-wrapper {
+    display: flex;
+    z-index: 9999999;
+}
+
+#main-visual .swiper-button-prev {
+    color: #fff;
+    padding-left: 50px;
+    z-index: 999999999;
+}
+
+#main-visual .swiper-button-next {
+    color: #fff;
+    padding-right: 50px;
+    z-index: 999999999;
+}
+
+#main-visual .swiper-scrollbar {
+    position: relative;
+    background: transparent;
+    top: -26px;
+}
+
+
+
+
+
+
+/******** dental-clinic **/
+
+
+#dental-clinic .container- {
+    display: flex;
+    margin-top: 53px;
+    justify-content: center;
+    align-items: center;
+}
+
+#dental-clinic .container- .clinic-box {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 2;
+}
+
+#dental-clinic .container- .clinic-box .text {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+}
+
+#dental-clinic .container- .clinic-box .text p {
+    font-size: 20px;
+    padding-bottom: 16px;
+}
+
+#dental-clinic .container- .clinic-box .text h3 {
+    font-size: 32px;
+    margin-bottom: 19px;
+}
+
+#dental-clinic .container- .clinic-box .text a {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+
+
+/******** doctor-about **/
+
+#doctor-about {
+    margin-top: 204px;
+    display: flex;
+    margin-bottom: 200px;
+}
+
+#doctor-about .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#doctor-about .about-text {
+    height: 550px;
+    flex-direction: column;
+    margin-right: 150px;
+    padding-left: 60px;
+    text-align: center;
+}
+
+#doctor-about .about-text h2 {
+    font-size: 60px;
+    color: var(--main-color);
+    margin-bottom: 31px;
+}
+
+#doctor-about .about-text p {
+    text-align-last: left;
+    font-size: 20px;
+    margin-bottom: 111px;
+    padding-left: 40px;
+}
+
+#doctor-about .about-btn {
+    background: var(--main-color);
+    border: 3px solid #fff;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 30px;
+}
+
+#doctor-about .about-text a {
+    color: #fff;
+    font-size: 32px;
+}
+
+
+
+
+
+
+/******* medical **/
+
+#medical {
+    display: flex;
+    flex-direction: column;
+    background: var(--sub-color01);
+    margin-bottom: 100px;
+
+
+}
+
+#medical .medical-title {
+    margin-top: 233px;
+}
+
+#medical .medical-title hr {
+    width: 20%;
+    background: var(--main-color);
+}
+
+#medical .medical-title h2 {
+    color: var(--main-color);
+    font-size: 48px;
+    text-align: center;
+}
+
+#medical .medical-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#medical .col {
+    display: flex;
+    flex-direction: column;
+    width: 369px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 63px;
+    margin-bottom: 80px;
+
+}
+
+#medical .text {
+    text-align: center;
+}
+
+#medical .text h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+#medical .text p  {
+    text-align: left;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+#medical .medical-container- {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#medical .medical-btn {
+    background: var(--main-color);
+    border: 3px solid #fff;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 30px;
+    margin-bottom: 138px;
+    width: 247px;
+    text-align: center;
+}
+
+#medical .medical-btn a {
+    color: #fff;
+    font-size: 32px;
+}
+
+
+
+
+
+
+/******* sub-banner **/
+
+#sub-banner .col {
+    background-image: url(../images/sub-banner.jpeg);
+    height: 474px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#sub-banner .col .text p {
+    margin-top: 90px;
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    padding: 70px;
+    line-height: 60px;
+    
+}
+
+#sub-banner .col .text span {
+    font-size: 90px;
+}
+
+
+
+
+
+
+
+/***** recommend **/
+
+#recommend {
+    margin-top: 100px;
+    background-image: url(../images/recommend-bg.jpeg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#recommend .recommend-title {
+    margin-bottom: 67px;
+}
+
+#recommend .recommend-title h2 {
+    color: var(--main-color);
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#recommend .recommend-title p {
+    text-align: center;
+    font-size: 24px;
+}
+
+#recommend .recommend-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#recommend .col {
+    width: 286px;
+    height: 362px;
+    border: 1px solid var(--main-color);
+    background: #fff;
+    border-top: 7px solid var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 49px;
+}
+
+#recommend .col h3 {
+    margin-bottom: 53px;
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--main-color);
+}
+
+#recommend .col p {
+    font-size: 24px;
+    text-align: center;
+}
+
+
+
+
+
+/****** academy **/
+
+#academy {
+    background-image: url(../images/academy-bg.jpeg);
+    background-position: center;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#academy .academy-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 120px;
+    
+}
+
+#academy .academy-box img {
+    width: 70%;
+    margin-right: -30px;
+}
+
+
+
+
+
+
+/******* sub-footer **/
+
+#sub-footer {
+    background-image: url(../images/sub-footer-bg.jpeg);
+    height: 456px;
+    color: #fff;
+    display: flex;
+}
+
+#sub-footer .time {
+    /* outline: 1px solid red; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sub-footer .time h2 {
+    /* margin-top: 60px; */
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 29px;
+}
+
+#sub-footer .time .time-text {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 40px;
+}
+
+#sub-footer .time .time-text p {
+    font-size: 24px;
+}
+
+#sub-footer .call {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#sub-footer .call h2 {
+    font-size: 40px;
+    padding: 30px;
+}
+
+#sub-footer .call-btn {
+    background: rgba(255, 255, 255, 0.537);
+    border: 1px solid #fff;
+    border-radius: 50px;
+    margin-top: 24px;
+}
+
+#sub-footer .call-btn p {
+    color: var(--text-color01);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 32px;
+}
+
+#sub-footer .call-btn p:hover {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+
+
+
+
+/******* fixed-menu **/
+
+#fixed-menu {
+    z-index: 3;
+    position: fixed;
+    bottom: 0;
+    /* justify-content: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; */
+  
+  }
+  
+  #fixed-menu .col{
+    width: 130px;
+    height: 130px;
+    background: var(--main-color);
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  #fixed-menu .col .fixed-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #fixed-menu .col .fixed-container img {
+    width: 42px;
+    margin-bottom: 16px;
+  }
+  
+  #fixed-menu .col .fixed-container p {
+    font-size: 16px;
+    font-weight: 600;
+  }
