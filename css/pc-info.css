@@ -1,26 +1,35 @@
-@import url('./pc-reset.css');
+@import url("./pc-reset.css");
 
-#title {
-    width: 100vw;
-    height: 420px;
+#info {
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
-.title-img img {
+#info header .bi {
+    display: none;
+}
+
+
+#title {
+    width: 100%;
+    height: 280px;
+}
+
+#info .title-img img {
     width: 100vw;
-    height: 420px;
+    height: 280px;
     margin-top: 90px;
 }
 
-.title-img h1 {
+#info .title-img h1 {
     position: absolute;
-    top: 228px;
+    top: 180px;
     left: 50%;
     letter-spacing: 0.1rem;
     transform: translateX(-50%);
     font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 22px;
     text-align: center;
     color: #fff;
     -webkit-transform: translateX(-50%);
@@ -29,34 +38,35 @@
     -o-transform: translateX(-50%);
 }
 
-.nav-implant {
+#info .nav-info {
     position: relative;
 }
 
-.nav-implant ul {
+#info .nav-info ul {
     position: absolute;
     display: flex;
     bottom: 3px;
     width: 100%;
 }
 
-.nav-implant ul li {
+#info .nav-info ul li {
     width: calc(100% / 2);
-    height: 70px;
+    height: 50px;
     background: rgba(0, 0, 0, 0.5);
     border: 1px solid #FFFFFF;
     letter-spacing: 0.1rem;
-    font-size: 22px;
-    line-height: 66px;
+    font-size: 18px;
+    line-height: 48px;
     text-align: center;
     color: #FFFFFF;
 }
 
-.nav-implant ul li:first-child {
+
+#info .nav-info ul li:first-child {
     border-right: none;
 }
 
-.nav-implant .on {
+#info .nav-info .on {
     background: rgba(26, 160, 165, 0.9);
 }
 
@@ -67,17 +77,21 @@ h4 {
 }
 
 #info .info_clinic {
-    position: relative;
-    display: flex;
-    flex-direction: column;
     top: 100px;
     margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #info .info_clinic h2 {
+    top: 100px;
+    margin: 100px 0;
     margin-bottom: 50px;
     padding: 10px;
     border-bottom: 2px solid var(--main-color);
+    text-align: center;
 }
 
 #info .info_clinic_background {
@@ -92,23 +106,37 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 20px;
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0px;
+}
+
+#info .info_clinic_background .info_col:nth-child(2) img {
+    width: 20%;
 }
 
 /* ----------<의료진 소개>---------- */
+#info .info_doctor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+/* 의료진 소개 타이틀 */
 #info .info_doctor h2 {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 50px;
-    margin-bottom: 50px;
     padding: 10px;
+    width: max-content;
     border-bottom: 2px solid var(--main-color);
 }
 
+/* 의료진 사진 */
 #info .info_doctor ul li img {
-    width: 350px;
+    width: 70%;
+    min-width: 300px;
 }
 
 #info .info_doctor {
@@ -119,23 +147,81 @@ h4 {
 #info .doctor_col ul {
     display: flex;
     margin-bottom: 150px;
+    width: 85vw;
+
 }
 
 #info .doctor_col ul li {
-    margin: 0 100px;
+    flex: 1 1;
+    justify-content: space-around;
 }
 
 #info .doctor_col ul .doctor_box {
+    width: 40vw;
+    /* height: 30rem; */
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+
+}
+
+#info .doctor_col ul .doctor_box .doctor_box_container .tag {
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+#info .doctor_col ul .doctor_box .doctor_box_container span {
+    font-size: 30px;
+    font-weight: 500;
+    color: #333333;
+}
+
+#info .doctor_col ul .doctor_box .doctor_box_container .comment {
+    color: var(--main-color);
+}
+
+#info .doctor_col .doctor_box_container {
+    position: relative;
     border-top: 1px solid var(--main-color);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     color: #333333;
-    width: 30vw;
-    height: 30rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    background-color: #f8f8f8;
+    min-width: 450px;
 }
 
-#info .doctor_col ul .doctor_box .doctor_box_container h4, p {
+#info .doctor_col ul .doctor_box .doctor_box_container p {
+    line-height: 40px;
+}
 
+#info .doctor_col ul .doctor_box .doctor_box_container:nth-child(1) p:nth-child(2) {
+    line-height: 30px;
+}
+
+#info .doctor_col .doctor_box .doctor_box_container {
+    padding: 20px 50px 20px 60px;
+}
+
+#info .doctor_col .doctor_box_container p {
+    padding-top: 10px;
+}
+
+#info .doctor_box:nth-child(1) {
+    margin-right: 20rem;
+}
+
+/* ------<tab event>------ */
+#info .info_container .tab_clinic.on {
+    background-color: var(--main-color);
+}
+
+#info .info_container .tab_clinic {
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+#info .info_container .tab_doctor.on {
+    background-color: var(--main-color);
+}
+
+#info .info_container .tab_doctor {
+    background-color: rgba(0, 0, 0, 0.5);
 }

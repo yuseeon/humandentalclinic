@@ -1,34 +1,44 @@
-/* mobile-clinic.css */
-@import url('./pc-reset.css');
+@import url('./mobile-reset.css');
 
-/* clinic.css */
 
 #title{
     width: 100vw;
-    height: 420px;
+    height: 96px;
 }
-
+.title-img{
+    width: 100vw;
+    height: 96px;
+    position: relative;
+}
 .title-img img {
     width: 100vw;
-    height: 420px;
-    margin-top: 90px;
+    height: 96px;
+    margin-top: 70px;
 }
 
 .title-img h1 {
     position: absolute;
-    top: 228px;
+    top: calc(50% + 70px);
     left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Noto Sans KR', sans-serif;
-    font-style: normal;
+    transform: translate(-50%, -50%);
     font-weight: 700;
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
-    color: #ffffff;
+    color: #fff;
+
+}
+
+main{
+    width: 100vw;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 90px;
 }
 
 .nav-implant{
     position: relative;
+    display: none;
 }
 
 .nav-implant ul{
@@ -40,12 +50,12 @@
 
 .nav-implant ul li {
     width: calc(100% / 4);
-    height: 70px;
+    height: 25px;
     background: rgba(0, 0, 0, 0.5);
     border: 1px solid #FFFFFF;
     font-weight: 400;
-    font-size: 26px;
-    line-height: 66px;
+    font-size: 12px;
+    /* line-height: 66px; */
     text-align: center;
     color: #FFFFFF;
 }
@@ -54,64 +64,35 @@
     background: rgba(26, 160, 165, 0.9);
 }
 
-.plus {
-    position: absolute;
-    width: 226px;
-    height: 35px;
-    right: 200px;
-    top: 542px;
-
-    font-family: 'Noto Sans KR', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 25px;
-    text-align: center;
-
-    color: #333333;
+.plus, .large {
+    display: none;
 }
-
-.large {
-    top: 540px;
-    font-size: 20px;
-    line-height: 29px;
-    right: 90px;
+.container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 .container1 h2 {
-    position: absolute;
-    width: 350px;
-    height: 52px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 230px;
-
-    font-family: 'Noto Sans KR', sans-serif;
-    font-style: normal;
+    width: 245px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 52px;
-
+    font-size: 24px;
+    text-align: center;
     color: #1AA0A5;
     border-bottom: 2px solid #1AA0A5;
 }
-
+.container .hi{
+}
 .container1 .strengths {
-    box-sizing: border-box;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1440px;
-    height: 293px;
-    padding-top: 30px;
-    top: 790px;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-style: normal;
+    width: 100vw;
+    height: 210px;
+    padding: 30px 0;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 14px;
+    line-height: 25px;
     background: #F8F8F8;
     border-top: 1px solid #1AA0A5;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     color: #333333;
     text-align: center;
 }
@@ -119,224 +100,121 @@
 .container1 .strengths strong {
     color: #1AA0A5;
 }
-
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container2 .container2-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .container2 h2 {
-    position: absolute;
-    width: 350px;
-    height: 52px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 750px;
-
-    font-family: 'Noto Sans KR', sans-serif;
-    font-style: normal;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 52px;
-
+    font-size: 24px;
+    text-align: center;
     color: #1AA0A5;
     border-bottom: 2px solid #1AA0A5;
 }
 
 .container2 .img-clinic1 {
-    position: absolute;
-    width: 476px;
-    height: 540px;
-    left: 50%;
-    margin-left: -500px;
-    top: 1334px;
+    width: 276px;
+    height: 340px;
 }
 
 .clinic-process-title {
-    position: absolute;
-    width: 497px;
-    height: 313px;
-    left: 50%;
-    margin-left: 130px;
-    top: 1425px;
-
-    font-family: 'Noto Sans KR', sans-serif;
-    font-style: normal;
+    margin-top: 40px;
+    margin-bottom: 20px;
     font-weight: 500;
-    font-size: 30px;
-    line-height: 43px;
-
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
     color: #1AA0A5;
 }
 
 .clinic-process-text {
-    position: absolute;
-    width: 497px;
-    height: 313px;
-    left: 50%;
-    margin-left: 130px;
-    top: 1525px;
-
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 32px;
-
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    text-align: center;
     color: #333333;
 }
 
 .container2 .img-clinic2 {
-    position: absolute;
-    width: 1260px;
-    height: 400.75px;
-    left: 50%;
-    margin-left: -550px;
-    top: 1947px;
+    width: calc(100vw - 40px);
 }
-
+.container3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
 .container3 h2 {
-    position: absolute;
-    width: 389px;
-    height: 52px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 2100px;
-
-    font-family: 'Noto Sans KR', sans-serif;
-    font-style: normal;
+    margin-top: 50px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 52px;
-
+    font-size: 24px;
+    text-align: center;
     color: #1AA0A5;
     border-bottom: 2px solid #1AA0A5;
 }
-
+.container3 .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+    text-align: center;
+    }
+.container3 .col p{
+    line-height: 25px;
+}
 .container3 .col1 img {
-    position: absolute;
-    width: 370px;
-    height: 360px;
-    left: 50%;
-    margin-left: -400px;
-    top: 2674px;
+    width: 160px;
+    height: 160px;
 }
 
 .container3 .col1 p {
-    position: absolute;
-    width: 394px;
-    height: 64px;
-    left: 50%;
-    margin-left: 150px;
-    top: 2821px;
-
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 32px;
-
+    width: 255px;
+    height: 36px;
+    font-weight: 300;
+    font-size: 14px;
     color: #333333;
+}
+.container3 .col2{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.container3 .col2 img {
+    width: 170px;
+    height: 160px;
 }
 
 .container3 .col2 p {
-    position: absolute;
-    width: 430px;
-    height: 64px;
-    left: 50%;
-    margin-left: -400px;
-    top: 3221px;
-
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 32px;
-
+    width: 274px;
+    height: 40px;
+    font-weight: 300;
+    font-size: 14px;
     color: #333333;
 }
 
-.container3 .col2 img {
-    position: absolute;
-    width: 424.95px;
-    height: 380px;
-    left: 50%;
-    margin-left: 150px;
-    top: 3057px;
-}
-
 .container3 .col3 img {
-    position: absolute;
-    width: 629px;
-    height: 249px;
-    left: 50%;
-    margin-left: -500px;
-    top: 3565px;
+    width: 216px;
+    height: 80px;
 }
 
 .container3 .col3 p {
-    position: absolute;
-    width: 456px;
-    height: 96px;
-    left: 50%;
-    margin-left: 150px;
-    top: 3651px;
-
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 32px;
-
+    width: 295px;
+    height: 54px;
+    font-weight: 300;
+    font-size: 14px;
     color: #333333;
 }
 
 span {
     color:#1AA0A5;
-}
-
-/* footer */
-
-footer  {
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 100vw;
-    height: 354px;
-    left: 0px;
-    top: 3982px;
-
-    background: #FFFFFF;
-    border-top: 1px solid #BCBCBC;
-}
-
-footer p {
-    position: absolute;
-    width: 899px;
-    height: 140px;
-    left: 40%;
-    top: 99px;
-
-    font-family: 'Noto Sans KR', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 35px;
-
-    color: #BCBCBC;
-}
-
-footer a .bi-instagram {
-    position: absolute;
-    right: 10.1%;
-    top: 42.94%;
-    bottom: 45.76%;
-    font-size: 50px;
-}
-
-footer a .bi-twitter {
-    position: absolute;
-    right: 5.26%;
-    top: 42.94%;
-    bottom: 45.76%;
-    font-size: 50px;
-}
-
-footer .bi{
-    color: #666;
 }

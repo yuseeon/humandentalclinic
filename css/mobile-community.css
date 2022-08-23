@@ -1,64 +1,54 @@
-
-
-@import url("./pc-reset.css");
-
+@import url('./mobile-reset.css');
 
 #title{
     width: 100vw;
-    height: 280px;
+    height: 96px;
+}
+.title-img{
+    width: 100vw;
+    height: 96px;
+    position: relative;
 }
 .title-img img {
     width: 100vw;
-    height: 280px;
-    margin-top: 90px;
-    object-fit: cover;
+    height: 96px;
+    margin-top: 70px;
+
 }
 
 .title-img h1 {
     position: absolute;
-    top: 180px;
+    top: calc(50% + 70px);
     left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Noto Sans KR',sans-serif;
-    font-style: normal;
+    transform: translate(-50%, -50%);
     font-weight: 700;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     color: #fff;
+
 }
 
-.nav-implant{
-    position: relative;
-}
 
 .nav-implant ul{
-    position: absolute;
+    /* position: absolute;
     display: flex;
     bottom: 3px;
-    width: 100%;
+    width: 100%; */
+    display: none;
 }
 
 .nav-implant ul li {
-    width: calc(100% / 2);
-    height: 50px;
+    /* width: calc(100% / 2);
+    height: 70px;
     background: rgba(0, 0, 0, 0.5);
     border: 1px solid #FFFFFF;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 48px;
+    font-size: 26px;
+    line-height: 66px;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFFFFF; */
 }
 
-
-.nav-implant .on {
-    background: rgba(26, 160, 165, 0.9);
-}
-main{
-    width: 100vw;
-    height: 1350px;
-    padding-top: 90px;
-}
 main h2{
     width: 100px;
     text-align: center;
@@ -67,59 +57,62 @@ main h2{
     transform: translateX(-50%);
     color: var(--main-color);
     border-bottom: 2px solid var(--main-color);
-   padding-top: 80px;
-    margin-bottom: 100px;
+    margin-top: 70px;
+    padding-top: 50px;
+    margin-bottom: 50px;
 }
 main > p{
     text-align: center;
     margin-bottom: 20px;
 }
 main section{
-    min-width: 1440px;
-    width: 1440px;
-    height: 800px;
+    min-width: 375px;
+    width: 375px;
+    height: 1720px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
 }
 main section .row{
-    width: 460px;
-    height: 388px;
+    width: 252px;
+    height: 144px;
 }
 main section .row img{
-    width: 460px;
-    height: 268px;
+    width: 252px;
+    height: 144px;
 }
 main section .row article{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 10px 20px;
+    padding-top: 15px;
 }
 main section .row article h6{
-    font-size: 18px;
+    font-size: 16px;
 }
 main section .row article p{
-    font-size: 16px;
+    font-size: 14px;
     color: #999;
 }
 .row hr{
     margin: 0 15px;
 }
 main section .row p{
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px 20px;
-    /*
-    글자가 지정 width값 이상으로 넘어갈시 ... 표시 해주는 코드 현재는 html .row p태그 안에 넣을 내용이 없어 생략
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space:nowrap;*/
+    white-space:nowrap;
+    /*
+    글자가 지정 width값 이상으로 넘어갈시 ... 표시 해주는 코드 현재는 html .row p태그 안에 넣을 내용이 없어 생략
+*/
 }
 
 .search-box{
-width: 1440px;
-height: 200px;
+width: 375px;
+height: 210px;
 margin: 0 auto;
 display: flex;
 flex-direction: column;
@@ -129,7 +122,6 @@ align-items: center;
 }
 
 .search-box ul{
-    width: 300px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -138,8 +130,13 @@ align-items: center;
     position: relative;
     height: 20px;
     padding-right: 7px;
-    padding-left: 5px;
+    padding-left: 6px;
     border-right: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
 }
 .search-box ul li:nth-child(2){
     font-weight: 700;
@@ -149,14 +146,15 @@ align-items: center;
 }
 .search-box ul li .bi{
     font-size: 16px;
+
 }
 .input-box{
     position: relative;
 }
 .search-box input{
-    width: 460px;
-    height: 42px;
-    padding: 20px;
+    width: 270px;
+    height: 36px;
+    padding: 10px;
 }
 .search-box .input-box .bi{
     position: absolute;

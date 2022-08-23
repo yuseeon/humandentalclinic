@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width">
   <title>사람그리고치과</title>
   <!-- pc-map.css-->
-  <link rel="stylesheet" href="/css/pc-map.css" media="screen and (min-width: 768px)">
+  <link rel="stylesheet" href="css/pc-map.css" media="screen and (min-width: 768px)">
   <!-- mobile-map.css-->
-  <link rel="stylesheet" href="/css/mobile-map.css" media="screen and (max-width: 767px)">
+  <link rel="stylesheet" href="css/mobile-map.css" media="screen and (max-width: 767px)">
   <!-- jquery cdn-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- header.js -->
-  <script src="/js/header.js"></script>
+  <script src="js/header.js"></script>
 </head>
 <body>
     <header>
@@ -19,6 +19,21 @@
             <a href="index.html">
                 <img src="images/logo.png" alt="logo">
             </a>
+        </div>
+        <i class="bi bi-list gnb-toggle"></i>
+        <div id="gnb">
+            <article>
+                <h3>H U M A N & D E N T A L  C L I N I C</h3>
+                <i class="bi bi-x gnb-close"></i>
+            </article>
+            <ul>
+                <a href="./info.html"><li>병원소개</li></a>
+                <a href="./clinic.html"><li>임플란트</li></a>
+                <a href="./clinic.html"><li>치아교정</li></a>
+                <a href="./clinic.html"><li>미백/성형</li></a>
+                <a href="./community.html"><li>병원소식</li></a>
+                <a href="./map.html"><li>진료안내</li></a>
+            </ul>
         </div>
         <nav>
             <ul class="depth1">
@@ -116,8 +131,8 @@
             경기도 성남시 분당구 삼평동 670번지 유스페이스 1동 306호 <br><br>
                 
             <strong>COPYRIGHT(c) Human Dental Clinic.LTD. ALL RIGHTS RESERVERD.</strong></p>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-twitter"></i></a>
+            <div class="sns"><a href="./"><i class="bi bi-instagram"></i></a>
+            <a href="./"><i class="bi bi-twitter"></i></a></div>
         </footer>
 </body>
 </html>

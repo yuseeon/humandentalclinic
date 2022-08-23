@@ -1,3 +1,5 @@
+
+
 $(function(){
 
     // //slider
@@ -20,7 +22,7 @@ $(function(){
 
 
 $(document).ready(function(){
-    const swiper = new Swiper('#main-visual .swiper-container', {
+    const swiper = new Swiper('#main-visual .swiper', {
   
         autoplay: {
           delay: 3000,
@@ -47,3 +49,41 @@ $(document).ready(function(){
     
       });
 })
+
+
+$(document).ready(function(){
+  const swiper = new Swiper('#main-visual-mobile .swiper-container', {
+
+      autoplay: {
+        delay: 3000,
+      },
+      
+      direction: 'horizontal',  // 효과
+      loop: true,
+      
+    // If we need pagination
+      pagination: {
+          el: '.swiper-pagination',
+      },
+
+  
+    });
+})
+
+// 이미지 및 콘텐츠 로딩 체크
+window.onload = function() {
+    // AOS 초기화
+    AOS.init();
+}
+
+// $(function(){
+//   $(window).scroll(function(){
+//     var scrollPosition = $(window).scrollTop();
+//     console.log(scrollPosition);
+//     if( scrollPosition >= 600 ){
+//       $('#fixed-menu').stop().slideDown();
+//     } else {
+//       $('#fixed-menu').stop().slideUp();
+//     }
+//   });
+// });
