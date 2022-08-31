@@ -90,9 +90,19 @@ h2 {
     text-align: center;
     gap: 15px;
     padding: 50px;
+    padding-top: 0;
+    margin-top: 53px;
     line-height: 25px;
 }
-
+body .breadcrumb {
+    position: relative;
+    top: 5px;
+    margin-right: 20px;
+    text-align: right;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+  }
 #info .info_clinic p {
     margin-top: 10px;
 }

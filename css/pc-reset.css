@@ -13,7 +13,13 @@
 html {
     scroll-behavior: smooth;
 }
-
+body{
+ -ms-overflow-style: none;
+ }
+ 
+::-webkit-scrollbar {
+  display: none;
+}
 * {
     margin: 0;
     padding: 0;
@@ -200,4 +206,23 @@ footer a .bi-twitter {
 }
 footer .bi{
     color: #666;
+}
+
+body .breadcrumb {
+  position: relative;
+  top: 140px;
+  text-align: right;
+  margin: 10px;
+  font-weight: 400;
+  color: #333333;
+}
+
+body .breadcrumb .bi {
+  font-size: 16px;
+}
+
+body .breadcrumb .strong {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--main-color);
 }
